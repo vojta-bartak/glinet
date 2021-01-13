@@ -22,16 +22,18 @@ Creates a discretized network from SpatialLines lines as a list of 2: vlist, eli
 The glinet object consists of two lists: list of vertices (vlist) and list of edges (elist).
 Vertices and edges in these lists have the following structure:
 
-Vertex: list: $coords: numeric vector of coordinates
-              $neibs: integer vector of neighbors (each neighbor coded by its index in vlist)
-              $w: vertex weight (numeric)
-              $hr: named vector of home range identifiers (0/1)
+Vertex: list:
+- $coords: numeric vector of coordinates
+- $neibs: integer vector of neighbors (each neighbor coded by its index in vlist)
+- $w: vertex weight (numeric)
+- $hr: named vector of home range identifiers (0/1)
 
-Edge: list: $from: index of first vertex (integer),
-            $to: index of second  vertex (integer),
-            $w: edge weight (numeric),
-            $oriented: indicates whether the edge is oriented (boolean)
-            $l: edge length (numeric)
+Edge: list:
+- $from: index of first vertex (integer)
+- $to: index of second  vertex (integer),
+- $w: edge weight (numeric),
+- $oriented: indicates whether the edge is oriented (boolean)
+- $l: edge length (numeric)
 
 The weights and orientation of edges are intended for more general use in the future and are not utilized
 in this version of the package.
