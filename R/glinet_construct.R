@@ -1,4 +1,4 @@
-library(sp)
+require(sp)
 
 # Cut a segment of length dx from the beginning of the input line xy. Return a new line.
 cut_segment <- function(xy, dx){
